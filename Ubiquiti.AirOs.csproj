@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<PackageId>Ubiquiti.AirOs</PackageId>
+		<Version>1.0.0</Version>
+		<Description>.NET client library for managing Ubiquiti airOS devices over SSH: read and change configuration with transactional apply, firmware updates, reboots and factory resets.</Description>
+		<PackageTags>ubiquiti;airos;airos;router;access-point;ssh;network;management</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/udachin077/Uibiquiti.AirOs</PackageProjectUrl>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Ubiquiti.AirOs</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CryptSharpStandard" Version="1.0.0" />
+		<PackageReference Include="SSH.NET" Version="2026.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="11.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="11.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="11.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="README.ru.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+</Project>
